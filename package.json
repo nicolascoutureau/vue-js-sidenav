@@ -1,0 +1,40 @@
+{
+    "private": false,
+    "name": "vue-sidenav",
+    "description": "Sidenav Component for Vue.js",
+    "version": "1.0.0",
+    "author": "Nicolas Coutureau <nicolas.coutureau@gmail.com>",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "webpack --config ./build/webpack.config.js --progress --hide-modules",
+        "watch": "webpack --config ./build/webpack.config.js --progress --hide-modules --watch",
+        "test": "jest"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nicolascoutureau/vue-sidenav.git"
+    },
+    "keywords": [
+        "front-end",
+        "web",
+        "vue",
+        "vuejs",
+        "vue-js",
+        "dialog",
+        "sidenav",
+        "drawer",
+        "vue-sidenav",
+        "vue-js-sidenav",
+        "menu",
+        "sidemenu",
+        "side-menu"
+    ],
+    "dependencies": {
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "terser-webpack-plugin": "^3.0.1",
+        "vue-loader": "^15.9.2"
+    }
+}

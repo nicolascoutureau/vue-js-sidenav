@@ -1,6 +1,6 @@
-import Sidenav from "./Sidenav";
+import Sidenav from "./Sidenav.vue";
 
-const VueSideNav = {
+const VueSidenav = {
     install(Vue, options) {
         this.bus = new Vue;
 
@@ -8,18 +8,18 @@ const VueSideNav = {
 
         Vue.prototype.$sidenav = {
             get bus(){
-              return VueSideNav.bus
+              return VueSidenav.bus
             },
             toggle(name){
-                VueSideNav.bus.$emit('toggle', name)
+                VueSidenav.bus.$emit('toggle', name)
             }
         }
     }
 };
 
-export default VueSideNav;
+export default VueSidenav;
 
 if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(VueSideNav)
+    window.Vue.use(VueSidenav)
 }
 

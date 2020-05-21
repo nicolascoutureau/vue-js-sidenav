@@ -24,7 +24,7 @@
             },
             position: {
                 type: String,
-                validator: (val) => ['right', 'left'].includes(val),
+                validator: val => ['right', 'left'].includes(val),
                 default: 'left'
             },
             width: {
@@ -51,7 +51,7 @@
 
                 this.isOpen ? this.close() : this.open()
             },
-            open(){
+            open() {
                 this.$emit('before-open');
 
                 document.body.style.overflow = "hidden";
