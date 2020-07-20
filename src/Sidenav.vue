@@ -1,7 +1,7 @@
 <template>
     <div>
         <!--Backdrop-->
-        <div class="vs--backdrop" @click="close()" v-if="isOpen"></div>
+        <div class="vs--backdrop" @click="close(name)" v-if="isOpen"></div>
         <!--\Backdrop-->
 
         <!--Sidenav-->
@@ -51,7 +51,7 @@
 
                 this.isOpen ? this.close(name) : this.open(name)
             },
-            open() {
+            open(name) {
                 if (name !== this.name) {
                     return;
                 }
@@ -61,7 +61,7 @@
                 document.body.style.overflow = "hidden";
                 this.isOpen = true
             },
-            close() {
+            close(name) {
                 if (name !== this.name) {
                     return;
                 }
