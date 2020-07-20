@@ -52,12 +52,20 @@
                 this.isOpen ? this.close() : this.open()
             },
             open() {
+                if (name !== this.name) {
+                    return;
+                }
+
                 this.$emit('before-open');
 
                 document.body.style.overflow = "hidden";
                 this.isOpen = true
             },
             close() {
+                if (name !== this.name) {
+                    return;
+                }
+
                 this.$emit('before-close');
 
                 document.body.style.overflow = null;

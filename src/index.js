@@ -12,6 +12,12 @@ const VueSidenav = {
             },
             toggle(name){
                 VueSidenav.bus.$emit('toggle', name)
+            },
+            open(name){
+                VueSidenav.bus.$emit('open', name)
+            },
+            close(name){
+                VueSidenav.bus.$emit('close', name)
             }
         }
     }

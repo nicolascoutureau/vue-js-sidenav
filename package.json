@@ -1,6 +1,6 @@
 {
     "private": false,
-    "name": "vue-sidenav",
+    "name": "vue-js-sidenav",
     "description": "Sidenav Component for Vue.js",
     "version": "1.0.1",
     "author": "Nicolas Coutureau <nicolas.coutureau@gmail.com>",
