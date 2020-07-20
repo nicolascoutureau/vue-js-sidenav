@@ -49,7 +49,7 @@
                     return;
                 }
 
-                this.isOpen ? this.close() : this.open()
+                this.isOpen ? this.close(name) : this.open(name)
             },
             open() {
                 if (name !== this.name) {

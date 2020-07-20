@@ -2,7 +2,7 @@
     "private": false,
     "name": "vue-js-sidenav",
     "description": "Sidenav Component for Vue.js",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Nicolas Coutureau <nicolas.coutureau@gmail.com>",
     "main": "dist/index.js",
     "scripts": {
